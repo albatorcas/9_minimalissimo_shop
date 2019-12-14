@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minimalissimo_shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --gris:#E6E6E6;
+            --grisc:#696969;
+        }
+        *{
+           margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        figure{
+            font-size: 0.85em;
+            border: 1px solid black;
+        }
+        figure p{
+            color: var(--grisc);
+        }
+        header{
+            height: 290px;
+            width: 100%;
+        }
+        h1 img{
+            height: 40px;
+            width: 40px;
+        }
+        h1{
+            text-align: center;
+            width; 100%;
+            padding: 20px 0 20px 0;
+        }
+        h2{
+            text-align: center;
+            padding: 80px 0;
+        }
+        /*MAIN*/
+        .container{
+            display: grid;
+            grid-template: repeat(3,1fr)/repeat(4,1fr);
+            grid-gap: 20px;
+        }
+        main figure:first-child{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        /*FOOTER*/
+        h3{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            font-weight: 400;
+            text-align: center;
+            padding: 50px 30px;
+        }
+        menu{
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            body{
+                background: red;
+            }
+            .container{
+                grid-template: repeat(4,1fr) / repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <h2>Minimal &amp; Mindful Curation</h2>
+    </header>
+    <main class="container">
+        <figure>
+            <img src="img/Minimalissimo%20N%C2%B03.jpeg" alt="">
+            <figurecaption>Minimalissimo Nº3</figurecaption>
+            <p>GBP 12.00</p>
+        </figure>
+        <figure>
+            <img src="img/Minimalissimo%20N%C2%BA2%20(Digital).jpeg" alt="">
+            <figurecaption>Minimalissimo Nº2 (Digital)</figurecaption>
+            <p>GBP 3.00</p>
+        </figure>
+        <figure>
+            <img src="img/Blloc%20Zero18.jpeg" alt="">
+            <figurecaption>Blloc Zero 18</figurecaption>
+            <p>GBP 380.00</p>
+        </figure>
+        <figure>
+            <img src="img/Minimalist%20Writer.jpeg" alt="">
+            <figurecaption>Minimalissimo Writer</figurecaption>
+            <p>GBP 10.00</p>
+        </figure>
+        <figure>
+            <img src="img/Minimalissimo%20Watch.jpeg" alt="">
+            <figurecaption>Minimalissimo Watch</figurecaption>
+            <p>GBP 140.00</p>
+        </figure>
+    </main>
+    <footer>
+        <p><a href="#">Minimalissimo</a> is a magazine and creative studio dedicated to minimalism in art and design</p>
+        <menu>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+        </menu>
+    </footer>
+</body>
+</html>
